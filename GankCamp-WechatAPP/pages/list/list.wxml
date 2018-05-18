@@ -1,0 +1,27 @@
+  <view class="wrap">
+      <view>
+        <text class="big_title">排行榜</text>
+        <text class="small_country">「抢单月榜」</text>
+      </view>
+
+    <view class="content" wx:for="{{rankList}}" wx:for-item="item" wx:key="itemId">
+        <view class="list-item">
+          <view class="list-item__image">
+            <image src="{{ item.image}}" class="list-item__icon" mode="scaleToFill"
+                  lazy-load></image>
+          </view>
+
+          <view class="list-item__order">{{ index+1 }}</view>
+
+          <view class="list-item__text">
+            <text class="list-item__title">{{ item.name }}</text>
+            <text class="list-item__sub-title">{{item.describe}}</text>
+          </view>
+          <view class="list-item__num">
+            <text class="num">{{item.val}}</text>
+            <text class="unit">单</text>
+          </view>
+        </view>
+    </view>
+
+  </view>

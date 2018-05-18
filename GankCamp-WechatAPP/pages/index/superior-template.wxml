@@ -1,0 +1,36 @@
+<template name="superiotList">
+  <scroll-view scroll-y="true" bindscrolltoupper="upper"  bindscrolltolower="onBindscrolltolower" style="height: 100%; background-color: #FFF;">
+<view class="rank" hidden="{{gankList.length <= 0}}">
+
+  <view class="rank__banner">
+    <view class="rank__title">大牛排行榜</view>
+    <view class="rank__item rank__item--first">
+      <image lazy-load="true" class="rank__icon rank__icon--first" src="{{gankList[0].portrait}}" />
+      <view class="rank__info">
+        <view class="rank__name">{{gankList[0].name}}</view>
+        <view class="rank__detail">{{gankList[0].describe}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="rank__list">
+    <view class="rank__item {{index === gankList.length - 1 ? 'rank__item--last' : ''}}"
+          wx:for="{{gankList}}"
+          wx:for-item="rank"
+          wx:for-index="index"
+          wx:key="id"
+          wx:if="{{index > 0}}"
+          data-index="{{index}}"
+          bindtap="tapRankItem">
+      <image lazy-load="true" class="rank__icon" src="{{rank.portrait}}" />
+      <view class="rank__info">
+        <view class="rank__name">{{rank.name}}</view>
+        <view class="rank__detail {{rank.open ? '' : 'rank__detail--close'}}">{{rank.describe}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<include src="../common/loadmore.wxml"/> 
+</scroll-view>
+</template>

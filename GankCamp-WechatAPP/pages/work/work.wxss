@@ -1,0 +1,89 @@
+.timeline{
+  height: 100%;
+}
+
+.tweet-container {
+  background-color: white;
+  margin: 20rpx;
+  border-radius: 4rpx;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.top-container {
+  padding: 10rpx 20rpx 0rpx;
+}
+.top-container .tijiao{
+  flex: 0;
+}
+
+.top-value{
+  padding: 20rpx;
+  border-bottom: 1rpx dashed #ddd;
+}
+
+.user-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.card-avatar {
+  background-color: #c8c8c8;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+  margin-right: 12rpx
+}
+.card-money{
+  color: red;
+  font-weight: bold;
+  font-size :26rpx;
+}
+.card-time {
+  font-size: 30rpx;
+  color: #1AAD19;
+  margin-top: 8rpx;
+  float: right;
+}
+.card-name {
+  font-weight: bold;
+  font-size: 28rpx;
+  margin-top: 8rpx;
+  color: #0366d6;
+}
+.middle-container {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #e1e1e1;
+}
+.message-text{
+  color: #5b5b5b;
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+.message-image {
+  width: 100%;
+  margin-top: 16rpx;
+  background-color: #e1e1e1;   
+}
+.bottom-container {
+  float: right;
+  background-color: #fafafa;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-rest-height {
+  flex: 1;
+  height: initial;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-rest-width {
+  flex: 1;
+  width: initial;
+}

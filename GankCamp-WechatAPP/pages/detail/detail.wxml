@@ -1,0 +1,120 @@
+<!--question.wxml-->
+<view class="container">
+    <view class="question-wrp">
+        <view class="question-item">
+            <view class="que-title">
+                <text class="type">悬赏</text>
+                <text class="money">￥10000 </text>
+                <text>物业公司LOGO设计征集中</text>
+            </view>
+        </view>
+        
+        <view class="que-operate flex-wrp">
+            <view class="flex-item">
+                <image src="https://work.ppct.cn/images/xiaochengxu/secured1.png"></image>
+                <text>担保中</text>
+            </view>
+            <view class="flex-item">
+                <image src="https://work.ppct.cn/images/xiaochengxu/desgin1.png"></image>
+                <text>投稿中</text>
+            </view>
+            <view class="flex-item">
+                <text class="wxtime">{{wxTimerList['wxTimer1'].wxTimer}}</text>
+            </view>
+        </view>
+
+        <view class="answerer-wrp">
+            <view class="bg-half"></view>
+              <view class="answerer flex-wrp">
+                  <view class="avatar flex-item">
+                      <image src="https://work.ppct.cn/images/icon8.jpg"></image>
+                  </view>
+                  <view class="answerer-info flex-item">
+                      <text class="answerer-name">Rebecca</text>
+                      <text class="answerer-des">WEB前端*不靠谱天想做代码小仙女</text>
+                  </view>
+                  <view class="follow flex-item">
+                      <view class="iconfont icon-yijian"></view>
+                  </view>
+              </view>
+         </view>
+
+        
+    </view>
+
+    <view class="comment-feed">
+        <view class="comment-title">任务明细</view>
+        <view class="comment-content">
+              <view class="comment-body">
+                  <view>
+                        <text>设计需求：
+                                    一款儿童门把手防撞套，
+                                    和一款儿童水龙头防撞保护套（带有延伸出水功能）；
+                                    体现沉稳，大气，远见等一些元素
+                                    要求设计一个黑白版，一个彩色版
+                                    确定颜色 
+                        </text>
+                  </view>
+              </view>
+          </view>
+    </view>
+    
+
+    <view class="comment-feed comment-footer">
+        <view class="comment-title">投稿</view>
+        <view  class="comment-item">
+                <view class="comment-people">
+                    <image src="https://work.ppct.cn/images/icon8.jpg"></image>
+                    <text>小明</text>
+                    <view class="comment-time">2015-05-11 10:20:36</view>
+                </view>
+                <view class="comment-content">
+                    <view class="comment-body">
+                        <view>
+                        <text>看看我的，还不错</text>
+                        </view>
+                        <view class="center">
+                            <image mode="aspectFill" src="http://wimg.spriteapp.cn/ugc/2018/05/06/5aee7a3ccc716.gif"></image>
+                        </view>
+                    </view>
+                </view>
+        </view>
+        <view  class="comment-item">
+                <view class="comment-people">
+                    <image src="https://work.ppct.cn/images/icon8.jpg"></image>
+                    <text>小明</text>
+                    <view class="comment-time">2015-05-11 10:20:36</view>
+                </view>
+                <view class="comment-content">
+                    <view class="comment-body">
+                        <view>
+                            <text>随便逛逛</text>
+                        </view>
+                    </view>
+                </view>
+        </view>
+        <view  class="comment-item">
+                <view class="comment-people">
+                   <image src="https://work.ppct.cn/images/icon8.jpg"></image>
+                    <text>小明</text>
+                    <view class="comment-time">2015-05-11 10:20:36</view>
+                </view>
+                <view class="comment-content">
+                    <view class="comment-body">
+                        <view>
+                            <text>随便逛逛</text>
+                        </view>
+                    </view>
+                </view>
+        </view>
+    </view>
+
+    <view class="detail-footer-barrage">
+        <barrage-origin comments="{{ comments }}" total="{{ comments.length }}"></barrage-origin>
+    </view>
+
+    <view class="detail-footer">
+        <button type="primary" bindtap="modalTap">我要抢单</button>
+    </view>  
+</view>
+

@@ -1,0 +1,24 @@
+<scroll-view scroll-y="true"  class="timeline">
+  <view class="tweet-container" wx:for="{{workList}}" wx:for-item="item" wx:key="workId">
+    <view class="top-container flex-row">            
+      <view class="user-container">
+        <text class="card-name">{{item.nickname}}</text>
+      </view>
+      <view bindtap="addTask" data-id="{{index}}" class="iconfont icon-tijiaodingdan tijiao"></view>
+    </view>
+    <view class="top-value">            
+        <text class="card-money">￥ {{item.money}}</text>
+        <text class="card-time">{{wxTimerList[index+1].wxTimer}}</text>
+    </view>
+    <view class="middle-container flex-column">
+      <text class="message-text">{{item.text}}</text>
+      <!-- <image class="message-image"
+        data-original-pic="{{item.original_pic}}" 
+        wx:if="{{item.original_pic}}" 
+        src="{{item.original_pic}}" 
+        mode="aspectFill"
+        catchtap="previewImage"
+      ></image> -->
+    </view>
+  </view>
+</scroll-view>

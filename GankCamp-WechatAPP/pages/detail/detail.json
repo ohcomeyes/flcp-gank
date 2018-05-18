@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "预览任务",
+    "usingComponents": {
+      "barrage-origin": "../../components/barrage-origin/barrage"
+    }
+}

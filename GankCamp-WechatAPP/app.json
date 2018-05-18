@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list",
+    "pages/my/my",
+    "pages/bill/bill",
+    "pages/work/work",
+    "pages/detail/detail",
+    "pages/showpic/showpic"
+  ],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_select.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      }, 
+      {
+        "iconPath": "image/ranking.png",
+        "selectedIconPath": "image/ranking_select.png",
+        "pagePath": "pages/list/list",
+        "text": "榜单"
+      },
+      {
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_select.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000
+  },
+  "window":{
+    "navigationBarBackgroundColor": "#138cff",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "首页"
+  }
+}

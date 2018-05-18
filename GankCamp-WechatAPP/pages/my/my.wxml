@@ -1,0 +1,62 @@
+<view class="wrap">
+    <view class="toparea">
+      <view class="left">
+        <text>资产</text>
+        <navigator url="../bill/bill">
+          <text>12330 元</text>
+        </navigator>
+      </view>
+      <view class="center">
+        <open-data class="portrait" type="userAvatarUrl"></open-data>
+        <open-data class="name" type="userNickName"></open-data>
+          <!-- <text>我是一个坏人</text>   -->
+      </view>
+      <view class="right">
+        <text>关注</text>
+        <text>7368</text>
+      </view>
+    </view>
+
+    <!-- 菜单列表 -->
+    <view class="menulist">
+      <navigator url="../work/work">
+        <view class="menuitem">
+            <view class="iconfont icon-suoyougongdan"></view>
+            <text>所有设计单</text>
+            <view class="iconfont icon-jiantou"></view>
+        </view>
+      </navigator>
+      <navigator url="../work/work">
+        <view class="menuitem">
+            <view class="iconfont icon-wocanyude"></view>
+            <text>我的设计单</text>
+            <view class="iconfont icon-jiantou"></view>
+        </view>
+      </navigator>
+      <view class="menuitem">
+        <view class="iconfont icon-zuopin"></view>
+        <text>我的创作</text>
+        <view class="iconfont icon-jiantou"></view>
+      </view>
+    </view>
+
+    <!-- 菜单列表 -->
+    <view class="menulist">
+      <view class="menuitem">
+        <view class="iconfont icon-canyu"></view>
+        <text>个人主页</text>
+      </view>
+      <view class="menuitem">
+        <view class="iconfont icon-yijian"></view>
+        <text>意见反馈</text>
+      </view>
+      <view class="menuitem">
+        <view class="iconfont icon-gengxin"></view>
+        <text>更新日志</text>
+      </view>
+      <view class="menuitem">
+        <view class="iconfont icon-guanyu"></view>
+        <text>关于</text>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,53 @@
+<import src="index-template.wxml"/>
+<import src="girl-template.wxml"/>
+<import src="superior-template.wxml"/>
+<import src="../search/search.wxml"/>
+
+<view class="container">
+  <view class="title-tabs-bar-container">
+    <text bindtap="onTitleBarsClick0" class="title-tabs-bar-tab-text {{curSelClassifyIndex == 0 ? 'title-tabs-bar-tab-text-selected' : ''}}">推荐</text>
+    <text bindtap="onTitleBarsClick1" class="title-tabs-bar-tab-text {{curSelClassifyIndex == 1 ? 'title-tabs-bar-tab-text-selected' : ''}}">大牛</text>
+    <text bindtap="onTitleBarsClick2" class="title-tabs-bar-tab-text {{curSelClassifyIndex == 2 ? 'title-tabs-bar-tab-text-selected' : ''}}">展览</text>
+  </view>
+
+  <swiper style="flex: 1;" bindchange="onBindchange" current="{{curSelClassifyIndex}}">
+    <swiper-item>
+
+    <view class="weui-search-bar">
+        <view class="weui-kind-bar__view-btn" bindtap="wxViewKind">
+              <icon class="iconfont icon-foot1-copy"></icon>
+        </view>
+        <zan-popup
+          show="{{ showTopPopup }}"
+          overlay="{{ true }}"
+          type="top"
+          bindclose="wxViewKind"
+        >
+          <view class="pop-example--top">内容</view>
+        </zan-popup>
+
+        <view class="weui-search-bar__form">
+          <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" bindfocus="wxSerchFocus" bindblur="wxSearchBlur" class="weui-search-bar__input" placeholder="请输入查询内容" value="{{wxSearchData.value}}" bindinput="wxSearchInput" />
+            <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
+              <icon type="clear" size="14"></icon>
+            </view>
+          </view>
+        </view>
+        <view class="weui-search-bar__cancel-btn" bindtap="wxSearchFn">
+              <icon class="iconfont icon-chaxun"></icon>
+        </view>
+    </view>
+      <template is="wxSearch" data="{{wxSearchData}}"/>
+
+      <template is="gankList" data="{{gankList: gankData['web']}}"/>
+    </swiper-item>
+    <swiper-item>
+      <template is="superiotList" data="{{gankList: gankData['superior']}}"/>
+    </swiper-item>
+    <swiper-item>
+      <template is="grilList" data="{{gankList: gankData['works']}}"/>
+    </swiper-item>
+  </swiper>
+</view>

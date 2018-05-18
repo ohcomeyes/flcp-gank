@@ -1,0 +1,47 @@
+<view class="wrap">
+    <!-- 顶部统计信息 -->
+    <view class="topinfo" id="topInfo">
+      <view class="calender">
+        <text>{{ calenderArr[0] }}年</text>
+        <picker mode="date" value="{{date}}" fields="month" start="2018-01-01" end="2020-01-01" change="bindDateChange">
+          <view class="picker">
+            <text class="bold">{{ calenderArr[1] }}</text>
+            <view class="iconfont icon-xuanze"></view>
+          </view>
+        </picker>
+      </view>
+      <view class="income">
+        <text>抢单收入</text>
+        <text class="bold">{{ moneyStat.income }}</text>
+      </view>
+      <view class="pay">
+        <text>设计提成</text>
+        <text class="bold">{{ moneyStat.pay }}</text>
+      </view>
+    </view>
+
+    <!-- 滚动区域 -->
+    <scroll-view class="scroll-view" scroll-y style="height:{{ scrollHeight }}px">
+      <view class="list-wrap" wx:for="{{detailList}}" wx:for-item="item" wx:key="itemId">
+          <view class="listsection">
+              <view class="header">
+                <view class="left">
+                  <text>{{ item.info.date }}</text>
+                </view>
+              </view>
+              <view class="body" wx:for="{{item.list}}" wx:for-item="obj" wx:key="index">
+                <view class="listitem" data-id="{{ obj.id }}">
+                    <image src="{{ obj.image }}"></image>
+                    <text class="title">{{ obj.title }}</text>
+                    <text class="mount">{{obj.mount}}</text>
+                  </view>
+              </view>
+          </view>
+      </view>
+    </scroll-view>
+
+    <!-- 记一笔 -->
+    <!-- <view class="btn-addbill">
+      <text>记</text>
+    </view> -->
+  </view>

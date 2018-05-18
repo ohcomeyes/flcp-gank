@@ -1,0 +1,23 @@
+  <!-- <import src="../girl/girl.js"/>  -->
+ <template name="grilList">
+  <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="onBindscrolltolower" style="height: 100%; background-color: #FFF;">
+    <view class="item-container1" wx:for="{{gankList}}" wx:for-item="gankData" wx:key="gankListId">
+      <view class="iamge-item-container">
+        <image id="{{gankData[0].url}}" bindtap="onImageClick" class="image" mode="aspectFill" src="{{gankData[0].url}}"/>
+        <view class="tips-container">
+          <text style="flex: 1;">{{gankData[0].desc}}</text>
+          <text>via：{{gankData[0].who}}</text>
+        </view>
+      </view>
+      <view class="iamge-item-container">
+        <image id="{{gankData.length == 2 ? gankData[1].url : ''}}" bindtap="onImageClick" class="image" mode="aspectFill" src="{{gankData.length == 2 ? gankData[1].url : ''}}"/>
+        <view class="tips-container">
+           <text style="flex: 1;">{{gankData.length == 2 ? gankData[1].desc : ''}}</text>
+          <text>via：{{gankData.length == 2 ? gankData[1].who : ''}}</text>
+        </view>
+      </view>
+    </view>
+    
+     <include src="../common/loadmore.wxml"/> 
+  </scroll-view>
+  </template>

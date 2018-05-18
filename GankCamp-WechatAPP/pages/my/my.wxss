@@ -1,0 +1,100 @@
+.toparea{
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    padding: 50rpx 0;
+    margin-bottom: 20rpx;
+    background-color: #138cff;
+}
+.toparea text{
+    display: block;
+    font-size: 26rpx;
+    color: #fff;
+}
+
+.toparea .portrait{
+  display:block;
+  width:100rpx;
+  height:100rpx;
+  margin:0 auto 0 auto;
+  border-radius:100%;
+  overflow:hidden;
+}
+
+.toparea .name{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.left{
+  width: 25%;
+}
+.right{
+    width: 25%;
+}
+.left text:last-child{
+      margin-top: 20rpx;
+      font-size: 28rpx;
+      font-weight: bold;
+      color: #fff;
+}
+
+.right text:last-child{
+      margin-top: 20rpx;
+      font-size: 28rpx;
+      font-weight: bold;
+      color: #fff;
+}
+
+.center{
+    flex: 1;
+}
+.center image{
+    display: block;
+    width: 100rpx;
+    height: 100rpx;
+    margin: 0 auto 0 auto;
+    border-radius: 100%;
+}
+.center text:last-child{
+      margin-top: 20rpx;
+      font-size: 28rpx;
+      font-weight: bold;
+}
+
+
+  .menulist{
+    margin-bottom: 20rpx;
+    background-color: #fff;
+    }
+    .menuitem:active{
+      background-color: #F4F4F4;
+    }
+.menuitem{
+      display: flex;
+      padding: 30rpx;
+      transition: background-color 0.3s;
+}
+
+  .menuitem .iconfont{
+        margin-right: 20rpx;
+        width: 50rpx;
+        height: 50rpx;
+        text-align: center;
+  }
+    .menuitem .iconfont::after{
+        font-family: "iconfont" !important;
+        font-size: 34rpx;
+        line-height: 50rpx;
+      }
+    .menuitem text{
+        flex: 1;
+        display: block;
+        height: 50rpx;
+        line-height: 50rpx;
+        font-size: 26rpx;
+        color: #666;
+    }

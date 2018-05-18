@@ -1,0 +1,113 @@
+.wrap{
+    position: relative;
+    height: 100%;
+  }
+  .topinfo{
+    display: flex;
+    justify-content: space-around;
+    height: 140rpx;
+    padding: 18rpx 0;
+    background-color: #138cff;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+ .topinfo text{
+      text-align: center;
+      display: block;
+      color: #fff;
+    }
+
+   .topinfo > view > text:first-child{
+      margin-bottom: 10rpx;
+      font-size: 28rpx; 
+    }
+
+   .topinfo .bold{
+      font-size: 40rpx;
+      font-weight: bold;
+    }
+
+  .picker{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .scroll-view{
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .list-wrap{
+    padding-bottom: 30rpx;
+  }
+
+  .btn-addbill{
+    position: fixed;
+    right: 30rpx;
+    bottom: 15rpx;
+    height: 100rpx;
+    width: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background-color: rgba(19, 140, 255, .9);
+    border-radius: 100%;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
+  }
+  .btn-addbill text{
+      font-size: 26rpx;
+      color: #fff;
+  }
+
+
+.listsection .header{
+      height: 60rpx;
+      padding: 0 30rpx;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1rpx solid #f0f0f0;
+}
+.listsection .header view{
+        display: flex;
+        justify-content: space-between;
+}
+.listsection .header view text{
+          line-height: 60rpx;
+          color: #666;
+          font-size: 26rpx;
+        }
+.listsection .header .left text:first-child {
+        margin-right: 20rpx;
+}
+.listsection .header .right text:first-child {
+        margin-right: 20rpx;
+}
+
+
+.listitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 16rpx 30rpx 16rpx 0rpx;
+    margin-left: 30rpx;
+    border-bottom: 1rpx solid #f0f0f0;
+}
+.listitem image{
+      margin-right: 20rpx;
+      display: block;
+      width: 60rpx;
+      height: 60rpx;
+      border-radius: 100%;
+}
+.listitem text{
+      display: block;
+      line-height: 60rpx;
+      font-size: 28rpx;
+}
+.listitem .mount{
+  font-size: 30rpx;
+  color: #FF4500;
+  font-weight: bold;
+}
+.listitem .title{
+      flex: 1;
+}
