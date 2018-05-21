@@ -17,13 +17,20 @@
         <view class="weui-kind-bar__view-btn" bindtap="wxViewKind">
               <icon class="iconfont icon-foot1-copy"></icon>
         </view>
+
         <zan-popup
           show="{{ showTopPopup }}"
           overlay="{{ true }}"
           type="top"
           bindclose="wxViewKind"
         >
-          <view class="pop-example--top">内容</view>
+        <view class="wx-kind">
+            <view class="catalog">
+                <block wx:for="{{wxSearchData.keys}}" wx:key="searchKind">
+                    <view class="wxSearchKeyItem" bindtap="wxSearchKindTap" data-key="{{item}}">{{item}}</view>
+                </block>
+            </view>
+        </view>
         </zan-popup>
 
         <view class="weui-search-bar__form">
@@ -38,6 +45,7 @@
         <view class="weui-search-bar__cancel-btn" bindtap="wxSearchFn">
               <icon class="iconfont icon-chaxun"></icon>
         </view>
+
     </view>
       <template is="wxSearch" data="{{wxSearchData}}"/>
 

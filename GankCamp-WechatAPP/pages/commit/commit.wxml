@@ -1,0 +1,50 @@
+  <view class="page-body">
+    <form>
+      <view class="page-section">
+          <view class="weui-cell weui-cell_input">
+              <textarea bindblur="bindTextAreaBlur" placeholder-style="font-size:30rpx" placeholder="备注说明..." auto-height />
+          </view>
+        
+        <view class="weui-cells">
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <view class="weui-uploader">
+                <view class="weui-uploader__hd">
+                  <view class="weui-uploader__title">选择</view>
+                  <view class="weui-uploader__info">{{imageList.length}}/{{count[countIndex]}}</view>
+                </view>
+                <view class="weui-uploader__bd">
+                  <view class="weui-uploader__files">
+                    <block wx:for="{{imageList}}" wx:key="imageId" wx:for-item="image">
+                      <view class="weui-uploader__file">
+                        <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                      </view>
+                    </block>
+                  </view>
+                  <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_switch">
+            <icon class="iconfont icon-geren"></icon>
+            <view class="weui-cell__bd">  是否公开</view>
+            <view class="weui-cell__ft">
+                <switch />
+            </view>
+          </view>
+        </view>
+
+        <view class="btn-addbill" bindtap="wxCommit">
+            <text>发表</text>
+        </view> 
+
+      </view>
+    </form>
+  </view>

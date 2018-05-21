@@ -183,6 +183,16 @@ Page({
       showTopPopup: !this.data.showTopPopup
     });
   },
+  wxSearchKindTap:function(e){
+    wx.showToast({
+      title: '加载中',
+      icon: 'loading',
+      duration: 1000
+    });
+    this.setData({
+      showTopPopup: !this.data.showTopPopup
+    });
+  },
 
   wxSearchClear:function(e){
     var that = this
@@ -190,6 +200,11 @@ Page({
   },
 
   wxSearchFn: function (e) {
+    wx.showToast({
+      title: '搜索中',
+      icon: 'loading',
+      duration: 1000
+    });
     var that = this
     WxSearch.wxSearchAddHisKey(that);
 

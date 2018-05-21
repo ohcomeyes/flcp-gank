@@ -147,7 +147,7 @@ page {
   padding: 20rpx 30rpx 20rpx;
   margin: 0 0 6rpx 0;
   background: #ffffff;
-  border-top: 1px solid #eee;
+  /* border-top: 1px solid #eee; */
   border-bottom: 1px solid #eee;
   box-shadow: 2px 2px 2px 5px #eeeeee;
 }
@@ -177,15 +177,12 @@ page {
 .container .feed-item .feed-source .member{
   position: relative;
   display: inline-block;
-}
-.container .feed-item .feed-source .member image{
-  display: inline-block;
-  width: 35rpx;
-  height: 35rpx;
+  font-size: 35rpx;
   padding-left: 10rpx;
-  top: 10rpx;
-  vertical-align: middle;
+  vertical-align: bottom;
+  color: #1AAD19;
 }
+
 .container .feed-item .feed-source text{
   /*position: absolute;*/
   display: inline-block;

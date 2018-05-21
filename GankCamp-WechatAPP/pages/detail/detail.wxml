@@ -3,20 +3,20 @@
     <view class="question-wrp">
         <view class="question-item">
             <view class="que-title">
-                <text class="type">悬赏</text>
-                <text class="money">￥10000 </text>
+                <icon class="iconfont icon-xuanshang type"></icon>
+                <text class="money"> 10000 </text>
                 <text>物业公司LOGO设计征集中</text>
             </view>
         </view>
         
         <view class="que-operate flex-wrp">
             <view class="flex-item">
-                <image src="https://work.ppct.cn/images/xiaochengxu/secured1.png"></image>
-                <text>担保中</text>
+                <icon class="iconfont icon-danbaozhifu"></icon>
+                <text> 担保中</text>
             </view>
             <view class="flex-item">
-                <image src="https://work.ppct.cn/images/xiaochengxu/desgin1.png"></image>
-                <text>投稿中</text>
+                <icon class="iconfont icon-toubiao"></icon>
+                <text> 投稿中</text>
             </view>
             <view class="flex-item">
                 <text class="wxtime">{{wxTimerList['wxTimer1'].wxTimer}}</text>
@@ -34,7 +34,7 @@
                       <text class="answerer-des">WEB前端*不靠谱天想做代码小仙女</text>
                   </view>
                   <view class="follow flex-item">
-                      <view class="iconfont icon-yijian"></view>
+                      <icon class="iconfont icon-lianxi"></icon>
                   </view>
               </view>
          </view>
@@ -43,7 +43,9 @@
     </view>
 
     <view class="comment-feed">
-        <view class="comment-title">任务明细</view>
+        <view class="comment-title iconfont icon-renwu">
+              <text> 设计需求 </text>
+        </view>
         <view class="comment-content">
               <view class="comment-body">
                   <view>
@@ -61,12 +63,14 @@
     
 
     <view class="comment-feed comment-footer">
-        <view class="comment-title">投稿</view>
+        <view class="comment-title iconfont icon-pinglun">
+            <text> 全部投稿(3) </text>
+        </view>
         <view  class="comment-item">
                 <view class="comment-people">
                     <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                     <text>小明</text>
-                    <view class="comment-time">2015-05-11 10:20:36</view>
+                    <view class="comment-time">9天前  <icon class="iconfont icon-dianzan_active"></icon></view>
                 </view>
                 <view class="comment-content">
                     <view class="comment-body">
@@ -83,7 +87,7 @@
                 <view class="comment-people">
                     <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                     <text>小明</text>
-                    <view class="comment-time">2015-05-11 10:20:36</view>
+                    <view class="comment-time">10天前  <icon class="iconfont icon-dianzan_active"></icon></view>
                 </view>
                 <view class="comment-content">
                     <view class="comment-body">
@@ -97,7 +101,7 @@
                 <view class="comment-people">
                    <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                     <text>小明</text>
-                    <view class="comment-time">2015-05-11 10:20:36</view>
+                    <view class="comment-time">13天前  <icon class="iconfont icon-dianzan_active"></icon></view>
                 </view>
                 <view class="comment-content">
                     <view class="comment-body">

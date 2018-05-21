@@ -27,12 +27,19 @@ Page({
   },
 
   modalTap: function (e) {
-    wx.showModal({
-      title: "抢单失败",
-      content: "目前抢单任务尚未开启，留意微信公众号公布开启时间",
-      showCancel: false,
-      confirmText: "确定"
+    wx.navigateTo({
+      url: '../commit/commit',
+      complete: res => {
+        
+      }
     })
+
+    // wx.showModal({
+    //   title: "抢单失败",
+    //   content: "目前抢单任务尚未开启，留意微信公众号公布开启时间",
+    //   showCancel: false,
+    //   confirmText: "确定"
+    // })
   },
   checkInitLoadGankData: function () {
       var wxTimer1 = new timer({

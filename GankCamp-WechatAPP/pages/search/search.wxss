@@ -39,8 +39,8 @@
   font-weight: bold;
   text-align: center;
   background-color: #eee;
-  margin: 5px;
-  padding: 5px 10px;
+  margin: 10px;
+  padding: 5px 5px;
   border-radius: 5px;
 }
 .wxSearchHistoryItem{
@@ -69,6 +69,20 @@
   line-height: 50px;
   text-align: center;
   font-size: 12px;
+}
+
+.wx-kind{
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  border-top: 1px #eee solid;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.wx-kind .catalog{
+  background: #fff;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
 }
 
 

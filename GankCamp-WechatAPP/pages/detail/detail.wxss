@@ -31,17 +31,12 @@
     background: #fff;
 }
 .question-item .que-title{
-    padding: 30rpx 20rpx 20rpx;
+    padding: 30rpx 20rpx 0;
     font-size: 32rpx;
 }
 .que-title .type{
-    padding:0 5px;
-    border-radius:2px;
-    font-size:13px;
-    background:#c9c9c9;
-    text-align:center;
-    color:#fff;
-    background-color:#4b0;
+    color:red;
+    font-size: 32rpx;
 }
 .que-title .money{
   color: red;
@@ -94,10 +89,17 @@
     padding-top: 10rpx;
 }
 .que-operate .flex-item{
-    padding: 26rpx 0;
-    font-size: 26rpx;
+    padding: 10rpx 0;
+    /* font-size: 26rpx; */
 }
 
+.flex-item icon{
+    color: #1AAD19;
+    font-size: 40rpx;
+}
+.flex-item text{
+  font-size: 26rpx; 
+}
 
 .que-operate image{
     width: 40rpx;
@@ -172,11 +174,14 @@
 }
 
 .comment-title{
-  font-size:28rpx;
-  border-left:3px solid #56abe4;
-  padding-left:10px;
+  color: #56abe4;
+  font-size:36rpx;
   margin:5px;
 }
+.comment-title text{
+  font-size: 28rpx;
+}
+
 .comment-item{
   box-sizing:border-box;
   width:100%;
@@ -196,7 +201,7 @@
   vertical-align: middle;
 }
 .comment-people text{
-  color:#00AA98;
+  font-weight: bold;
   display: inline-block;
   height: 40rpx;
   line-height: 40rpx;
@@ -256,7 +261,7 @@
 .comment-body text{
   font-size: 26rpx;
   line-height: 40rpx;
-  color: #889091;
+  color: #4D4D4D;
 }
 
 .detail-footer-barrage{

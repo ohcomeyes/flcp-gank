@@ -101,7 +101,7 @@
 .listitem text{
       display: block;
       line-height: 60rpx;
-      font-size: 28rpx;
+      font-size: 26rpx;
 }
 .listitem .mount{
   font-size: 30rpx;

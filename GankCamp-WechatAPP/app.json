@@ -6,6 +6,7 @@
     "pages/bill/bill",
     "pages/work/work",
     "pages/detail/detail",
+    "pages/commit/commit",
     "pages/showpic/showpic"
   ],
   "tabBar": {

@@ -1,25 +1,25 @@
 <template name="gankList">
   <scroll-view scroll-y="true" bindscrolltoupper=""  bindscrolltolower="onBindscrolltolower" style="height: 100%; background-color: #FFF;">
-  <navigator url="../detail/detail?title={{gankInfo.demand_name}}&url={{gankInfo.url}}" wx:for="{{gankList}}" wx:for-item="gankInfo" wx:key="gankListId">
-  <block>
+  <navigator url="../detail/detail?title={{gankInfo.demand_name}}&url={{gankInfo.url}}">
+  <block wx:for="{{gankList}}" wx:for-item="gankInfo" wx:key="gankListId">
         <view class="feed-item">
             <view class="feed-source">
                     <view class="avatar">
                         <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                     </view>
                     <text>{{gankInfo.demand_employer}}</text>
-                    <view class="member"><image src="https://work.ppct.cn/images/xiaochengxu/class3.png"></image></view>
+                    <view class="member"><icon class="iconfont icon-tubiao-"></icon></view>
                     <text class="money">￥{{gankInfo.demand_money}}</text>
             </view>
             <view class="feed-content">
-                <view class="question" qid="{{question_id}}" bindtap="bindQueTap">
+                <view class="question" qid="{{question_id}}">
                         <text class="question-link">{{gankInfo.demand_name}}</text>
                 </view>
                 <view class="answer-body">
-                    <view bindtap="bindItemTap">
+                    <view>
                         <text class="answer-txt" aid="{{answer_id}}">{{gankInfo.demand_describe}}</text>
                     </view>
-                    <view class="answer-actions" bindtap="bindItemTap">
+                    <view class="answer-actions">
                     <text class="item-info-browse">365 浏览</text>
                     <text class="item-info-take">3 浏览</text>
                     <text class="item-info-date">{{gankInfo.end_date}} 截至</text>
