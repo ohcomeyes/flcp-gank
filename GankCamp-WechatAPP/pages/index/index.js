@@ -194,6 +194,12 @@ Page({
     });
   },
 
+  tapRankItem: function(e){
+    wx.navigateTo({
+      url: "../home/home",
+    })
+  },
+
   wxSearchClear:function(e){
     var that = this
     WxSearch.wxSearchClear(that);
