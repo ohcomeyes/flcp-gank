@@ -33,22 +33,26 @@
             <view class="iconfont icon-jiantou"></view>
         </view>
       </navigator>
+      <navigator url="../home/home">
       <view class="menuitem">
         <view class="iconfont icon-zuopin"></view>
         <text>我的创作</text>
         <view class="iconfont icon-jiantou"></view>
       </view>
+      </navigator>
     </view>
 
     <!-- 菜单列表 -->
     <view class="menulist">
+      <navigator url="../home/home">
       <view class="menuitem">
         <view class="iconfont icon-canyu"></view>
         <text>个人主页</text>
       </view>
+      </navigator>
       <view class="menuitem">
         <view class="iconfont icon-yijian"></view>
-        <text>意见反馈</text>
+        <text>我的消息</text>
       </view>
       <view class="menuitem">
         <view class="iconfont icon-gengxin"></view>

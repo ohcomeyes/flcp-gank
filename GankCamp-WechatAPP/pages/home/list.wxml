@@ -1,0 +1,23 @@
+<template name="item">
+	<view class="item" bindtap="gotoDetail" data-itemid="{{item.id}}">
+		<view class="item-info">
+      <view class="item-img">
+          <image mode="aspectFit" src="{{item.url}}"></image>
+      </view>
+			<view class="item-title">
+				{{item.title}}
+			</view>
+			<view class="item-desc">
+        <icon class="iconfont icon-fangwenliang right"> 6281</icon>
+        <icon class="iconfont icon-dianzan_active left"> 343</icon>
+			</view>
+		</view>
+	</view>
+</template>
+
+ <template name="list">
+	<view class="list" wx:if="{{list.length > 0}}">
+		<template wx:for="{{list}}" wx:key="number" is="item" data="{{item: item}}" />
+	</view>
+	<loading wx:else>加载中...</loading>
+</template> 

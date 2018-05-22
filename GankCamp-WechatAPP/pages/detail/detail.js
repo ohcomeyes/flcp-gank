@@ -51,4 +51,9 @@ Page({
       })
       wxTimer1.start(this);
   },
+  viewPeople: function(e){
+    wx.navigateTo({
+      url: "../home/home",
+    })
+  }
 })

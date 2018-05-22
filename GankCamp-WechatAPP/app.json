@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/list/list",
     "pages/my/my",
+    "pages/home/home",
     "pages/bill/bill",
     "pages/work/work",
     "pages/detail/detail",

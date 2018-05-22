@@ -1,0 +1,29 @@
+<!-- header -->
+<template name="header">
+	<view class="header">
+		<view class="text">
+			<view class="title">eyas</view>
+		</view>
+		<view class="logo">
+			<image src="https://work.ppct.cn/images/icon8.jpg" />
+		</view>
+	</view>
+  <view class="influence">
+        <view>
+          <text>人气</text>
+          <text>1231934</text>          
+        </view>
+        <view>
+          <text>创作</text>
+          <text>3</text>          
+        </view>
+        <view>
+          <text>粉丝</text>
+          <text>7794</text>
+        </view>
+        <view>
+          <text>关注</text>
+          <text>76</text>
+        </view>
+  </view>
+</template>

@@ -179,7 +179,7 @@ page {
   display: inline-block;
   font-size: 35rpx;
   padding-left: 10rpx;
-  vertical-align: bottom;
+  vertical-align: middle;
   color: #1AAD19;
 }
 

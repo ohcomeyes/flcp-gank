@@ -8,7 +8,9 @@
                         <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                     </view>
                     <text>{{gankInfo.demand_employer}}</text>
-                    <view class="member"><icon class="iconfont icon-tubiao-"></icon></view>
+                    <view class="member">
+                        <icon class="iconfont icon-tubiao-"></icon>
+                    </view>
                     <text class="money">￥{{gankInfo.demand_money}}</text>
             </view>
             <view class="feed-content">

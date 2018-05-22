@@ -5,7 +5,7 @@
       </view>
 
     <view class="content" wx:for="{{rankList}}" wx:for-item="item" wx:key="itemId">
-        <view class="list-item">
+        <view class="list-item" bindtap="viewPeople">
           <view class="list-item__image">
             <image src="{{ item.image}}" class="list-item__icon" mode="scaleToFill"
                   lazy-load></image>

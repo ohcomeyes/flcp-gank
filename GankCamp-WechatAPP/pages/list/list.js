@@ -38,4 +38,9 @@ Page({
   },
   onLoad: function () {
   },
+  viewPeople: function(e){
+    wx.navigateTo({
+      url: "../home/home",
+    })
+  }
 })
