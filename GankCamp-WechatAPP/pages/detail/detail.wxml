@@ -71,8 +71,8 @@
                     <view bindtap="viewPeople" class="jump">
                       <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                       <text class="comment-name">小明</text>
+                      <text class="comment-time">9天前</text>
                     </view>
-                    <text class="comment-time">9天前发表</text>
                     <icon class="iconfont icon-dianzan_active">112</icon>
                 </view>
                 <view class="comment-content">
@@ -91,8 +91,8 @@
                     <view bindtap="viewPeople" class="jump">
                       <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                       <text class="comment-name">哈哈宝</text>
+                      <text class="comment-time">11天前</text>
                     </view>
-                    <text class="comment-time">11天前发表</text>
                     <icon class="iconfont icon-dianzan_active">102</icon>
                 </view>
                 <view class="comment-content">
@@ -108,8 +108,8 @@
                     <view bindtap="viewPeople" class="jump">
                       <image src="https://work.ppct.cn/images/icon8.jpg"></image>
                       <text class="comment-name">eyzr</text>
+                      <text class="comment-time">19天前</text>
                     </view>
-                    <text class="comment-time">19天前发表</text>
                     <icon class="iconfont icon-dianzan_active">12</icon>
                 </view>
                 <view class="comment-content">

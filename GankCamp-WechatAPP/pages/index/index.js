@@ -23,9 +23,7 @@ Page({
       title: '初始化中',
     })
     this.checkInitLoadGankData();
-    setTimeout(function () {
-      wx.hideLoading()
-    }, 1000)
+    
 
     var that = this
     //初始化的时候渲染wxSearchdata
@@ -148,6 +146,10 @@ Page({
       })
       tabInitState[this.data.curSelClassifyIndex] = true
       console.log(tabInitState);
+      
+      setTimeout(function () {
+        wx.hideLoading()
+      }, 1000)
     })
   },
     // 数据转换成大数组里面包含两条数据的小数组

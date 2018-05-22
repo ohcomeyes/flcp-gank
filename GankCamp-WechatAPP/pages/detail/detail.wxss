@@ -190,6 +190,8 @@
   float:left;
 }
 .comment-people{
+  display: flex;
+  align-items:center;
   padding: 10rpx;
   vertical-align: bottom;
 }
@@ -217,19 +219,18 @@
 .comment-people icon{
   display: inline-block;
   font-size: 26rpx;
-  float: right;
+  position: absolute;
+  right: 16px;
   color: #a0acac;
 }
 
 
 .comment-feed{
-  width: 690rpx;
   padding: 20rpx 20rpx 20rpx;
   margin: -1rpx 0 6rpx 0;
   background: #ffffff;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  box-shadow: 2px 2px 2px 5px #eeeeee;
 }
 
 .comment-footer{
